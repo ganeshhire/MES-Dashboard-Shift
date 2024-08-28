@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly MES Shift Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weekly Shift Management</h1>
+    </header>
+    <main>
+        <div id="login-container">
+            <h2>Admin Login</h2>
+            <input type="text" id="admin-username" placeholder="Username">
+            <input type="password" id="admin-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p id="login-error" style="color: red; display: none;">Invalid credentials</p>
+        </div>
+
+        <div id="app-container" style="display: none;">
+            <div class="table-container">
+                <table id="shift-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be dynamically generated -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="save-btn">Save Changes</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
